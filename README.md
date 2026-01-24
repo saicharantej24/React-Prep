@@ -55,9 +55,7 @@ function App()
 }
 export default App;
 ```
-```text
 The problem with JSX is we cant return 2 stats once like below. If we do so it returns error.
-```
 ```js
 import React from "react";
 function App()
@@ -80,9 +78,7 @@ return (<div>
 }
 export default App;
 ```
-```text
 We cant write js in html but we can write js inside jsx:
-```
 ```js
 import React from "react";
 const App=()=>{
