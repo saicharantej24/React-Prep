@@ -749,6 +749,7 @@ const App=()=>{
    # App.js:
 ```js
 import React from "react";
+// data taken from :https://jsonplaceholder.typicode.com/
 const data = [
    {
     albumId: 1,
