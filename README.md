@@ -745,7 +745,418 @@ const App=()=>{
    };
    
    ```
-   
+   # Now we will use exm=amples for props:
+   # App.js:
+```js
+import React from "react";
+const data = [
+   {
+    albumId: 1,
+    id: 1,
+    title: "accusamus beatae ad facilis cum similique qui sunt",
+    url: "https://placehold.co/600x400?text=Image+1",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+1"
+  },
+  {
+    albumId: 1,
+    id: 2,
+    title: "reprehenderit est deserunt velit ipsam",
+    url: "https://placehold.co/600x400?text=Image+2",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+2"
+  },
+  {
+    albumId: 1,
+    id: 3,
+    title: "officia porro iure quia iusto qui ipsa ut modi",
+    url: "https://placehold.co/600x400?text=Image+3",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+3"
+  },
+  {
+    albumId: 1,
+    id: 4,
+    title: "culpa odio esse rerum omnis laboriosam voluptate repudiandae",
+    url: "https://placehold.co/600x400?text=Image+4",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+4"
+  },
+  {
+    albumId: 1,
+    id: 5,
+    title: "natus nisi omnis corporis facere molestiae rerum in",
+    url: "https://placehold.co/600x400?text=Image+5",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+5"
+  },
+  {
+    albumId: 1,
+    id: 6,
+    title: "accusamus ea aliquid et amet sequi nemo",
+    url: "https://placehold.co/600x400?text=Image+6",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+6"
+  },
+  {
+    albumId: 1,
+    id: 7,
+    title: "officia delectus consequatur vero aut veniam explicabo",
+    url: "https://placehold.co/600x400?text=Image+7",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+7"
+  },
+  {
+    albumId: 1,
+    id: 8,
+    title: "aut porro officiis laborum odit ea laudantium corporis",
+    url: "https://placehold.co/600x400?text=Image+8",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+8"
+  },
+  {
+    albumId: 1,
+    id: 9,
+    title: "qui eius qui autem sed",
+    url: "https://placehold.co/600x400?text=Image+9",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+9"
+  },
+  {
+    albumId: 1,
+    id: 10,
+    title: "beatae et provident et ut vel",
+    url: "https://placehold.co/600x400?text=Image+10",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+10"
+  },
+  {
+    albumId: 1,
+    id: 1,
+    title: "accusamus beatae ad facilis cum similique qui sunt",
+    url: "https://placehold.co/600x400?text=Image+1",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+1"
+  },
+  {
+    albumId: 1,
+    id: 2,
+    title: "reprehenderit est deserunt velit ipsam",
+    url: "https://placehold.co/600x400?text=Image+2",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+2"
+  },
+  {
+    albumId: 1,
+    id: 3,
+    title: "officia porro iure quia iusto qui ipsa ut modi",
+    url: "https://placehold.co/600x400?text=Image+3",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+3"
+  },
+  {
+    albumId: 1,
+    id: 4,
+    title: "culpa odio esse rerum omnis laboriosam voluptate repudiandae",
+    url: "https://placehold.co/600x400?text=Image+4",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+4"
+  },
+  {
+    albumId: 1,
+    id: 5,
+    title: "natus nisi omnis corporis facere molestiae rerum in",
+    url: "https://placehold.co/600x400?text=Image+5",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+5"
+  },
+  {
+    albumId: 1,
+    id: 6,
+    title: "accusamus ea aliquid et amet sequi nemo",
+    url: "https://placehold.co/600x400?text=Image+6",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+6"
+  },
+  {
+    albumId: 1,
+    id: 7,
+    title: "officia delectus consequatur vero aut veniam explicabo",
+    url: "https://placehold.co/600x400?text=Image+7",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+7"
+  },
+  {
+    albumId: 1,
+    id: 8,
+    title: "aut porro officiis laborum odit ea laudantium corporis",
+    url: "https://placehold.co/600x400?text=Image+8",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+8"
+  },
+  {
+    albumId: 1,
+    id: 9,
+    title: "qui eius qui autem sed",
+    url: "https://placehold.co/600x400?text=Image+9",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+9"
+  },
+  {
+    albumId: 1,
+    id: 10,
+    title: "beatae et provident et ut vel",
+    url: "https://placehold.co/600x400?text=Image+10",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+10"
+  }
+];
+
+   const App=()=>{ 
+      
+      return(
+         <section className="container">
+            <Profile/>
+            <Profile/>
+            <Profile/>
+         </section>
+      );
+   };
+
+   const Profile=()=>{
+      return <article className="profile-card">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2S-Iery5e7qnPTt3561zvjVCmtsogen3Q2w&s" alt="profile"/>
+         <h2 className="title">hello everyone</h2>
+         <a href="https://www.google.com" className="button">
+         Details
+         </a>
+      </article>
+   }
+   export default App;
+
+```
+# index.css:
+```js
+*{
+    padding:0 px;
+    margin:0 px;
+    box-sizing:border-box;
+    background-color: aquamarine;
+}
+.container{
+    width:100%;
+    height:100%;
+    max-width:1000px;
+    margin:2 rem auto;
+}
+.profile-card{
+    width:100%;
+    height:100%;
+        box-shadow: 0px 0px 13px black;
+}
+.profile-card img{
+    height:100%;
+    width:100%;
+}
+.profile-card .title{
+    margin-top:20px;
+}
+.profile-card a{
+    color:red;
+    display:inline-block;
+    padding:10px;
+    border:1px solid black;
+
+
+}
+@media screen and (min-width:768px){
+
+.container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+
+}
+}
+```
+```text
+This is how we passsed image 3 times but if we have loads of data like we kept in object called data, how to do it lets see:
+```
+# App.js:
+```js
+//Modified
+import React from "react";
+import Profile from "./Profile.js";
+const data = [
+   {
+    albumId: 1,
+    id: 1,
+    title: "accusamus beatae ad facilis cum similique qui sunt",
+    url: "https://placehold.co/600x400?text=Image+1",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+1"
+  },
+  {
+    albumId: 1,
+    id: 2,
+    title: "reprehenderit est deserunt velit ipsam",
+    url: "https://placehold.co/600x400?text=Image+2",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+2"
+  },
+  {
+    albumId: 1,
+    id: 3,
+    title: "officia porro iure quia iusto qui ipsa ut modi",
+    url: "https://placehold.co/600x400?text=Image+3",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+3"
+  },
+  {
+    albumId: 1,
+    id: 4,
+    title: "culpa odio esse rerum omnis laboriosam voluptate repudiandae",
+    url: "https://placehold.co/600x400?text=Image+4",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+4"
+  },
+  {
+    albumId: 1,
+    id: 5,
+    title: "natus nisi omnis corporis facere molestiae rerum in",
+    url: "https://placehold.co/600x400?text=Image+5",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+5"
+  },
+  {
+    albumId: 1,
+    id: 6,
+    title: "accusamus ea aliquid et amet sequi nemo",
+    url: "https://placehold.co/600x400?text=Image+6",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+6"
+  },
+  {
+    albumId: 1,
+    id: 7,
+    title: "officia delectus consequatur vero aut veniam explicabo",
+    url: "https://placehold.co/600x400?text=Image+7",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+7"
+  },
+  {
+    albumId: 1,
+    id: 8,
+    title: "aut porro officiis laborum odit ea laudantium corporis",
+    url: "https://placehold.co/600x400?text=Image+8",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+8"
+  },
+  {
+    albumId: 1,
+    id: 9,
+    title: "qui eius qui autem sed",
+    url: "https://placehold.co/600x400?text=Image+9",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+9"
+  },
+  {
+    albumId: 1,
+    id: 10,
+    title: "beatae et provident et ut vel",
+    url: "https://placehold.co/600x400?text=Image+10",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+10"
+  },
+  {
+    albumId: 1,
+    id: 1,
+    title: "accusamus beatae ad facilis cum similique qui sunt",
+    url: "https://placehold.co/600x400?text=Image+1",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+1"
+  },
+  {
+    albumId: 1,
+    id: 2,
+    title: "reprehenderit est deserunt velit ipsam",
+    url: "https://placehold.co/600x400?text=Image+2",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+2"
+  },
+  {
+    albumId: 1,
+    id: 3,
+    title: "officia porro iure quia iusto qui ipsa ut modi",
+    url: "https://placehold.co/600x400?text=Image+3",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+3"
+  },
+  {
+    albumId: 1,
+    id: 4,
+    title: "culpa odio esse rerum omnis laboriosam voluptate repudiandae",
+    url: "https://placehold.co/600x400?text=Image+4",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+4"
+  },
+  {
+    albumId: 1,
+    id: 5,
+    title: "natus nisi omnis corporis facere molestiae rerum in",
+    url: "https://placehold.co/600x400?text=Image+5",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+5"
+  },
+  {
+    albumId: 1,
+    id: 6,
+    title: "accusamus ea aliquid et amet sequi nemo",
+    url: "https://placehold.co/600x400?text=Image+6",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+6"
+  },
+  {
+    albumId: 1,
+    id: 7,
+    title: "officia delectus consequatur vero aut veniam explicabo",
+    url: "https://placehold.co/600x400?text=Image+7",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+7"
+  },
+  {
+    albumId: 1,
+    id: 8,
+    title: "aut porro officiis laborum odit ea laudantium corporis",
+    url: "https://placehold.co/600x400?text=Image+8",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+8"
+  },
+  {
+    albumId: 1,
+    id: 9,
+    title: "qui eius qui autem sed",
+    url: "https://placehold.co/600x400?text=Image+9",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+9"
+  },
+  {
+    albumId: 1,
+    id: 10,
+    title: "beatae et provident et ut vel",
+    url: "https://placehold.co/600x400?text=Image+10",
+    thumbnailUrl: "https://placehold.co/150x150?text=Thumb+10"
+  }
+];
+const App=()=>{ 
+      
+      return(
+         <section className="container">
+            {
+               data.map((eachObj)=>
+               {
+                  const {id,title,url,thumbnailUrl}=eachObj;
+               return (
+                  <Profile
+                  key={id}
+                  id={id}
+                  title={title}
+                  url={url}
+                  thumbnailUrl={thumbnailUrl}
+                  />
+               );
+            })
+         }
+            
+         </section>
+      );
+   };
+  
+   export default App;
+```
+```text
+To keep components seperately:
+craete a file called Profile.js:
+```
+# Profile.js
+```js
+ const Profile=(props)=>{
+      const {id,title,url,thumbnailUrl}=props;
+      return <article className="profile-card">
+         <img src={thumbnailUrl} alt="profile"/>
+         <h2 className="title">{title}</h2>
+         <a href={url} className="button">
+         Details
+         </a>
+      </article>
+   }
+export default Profile;
+```
+# props example 2:
+
+
+
 
 
 
